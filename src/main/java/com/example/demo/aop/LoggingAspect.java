@@ -16,8 +16,8 @@ public class LoggingAspect {
 	public void logBefore(JoinPoint joinPoint) {
 		outputLog("メソッド開始", joinPoint);
 	}
-	
-	@AfterReturning("execution(* com.example.demo.serviece.*.*(. .))")
+
+	@AfterReturning("execution(* com.example.demo.service.*.*(. .))")
 	public void logAgter(JoinPoint joinPoint) {
 		outputLog("メソッド終了", joinPoint);
 	}
